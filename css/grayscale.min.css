@@ -1,0 +1,568 @@
+/*!
+ * Start Bootstrap - Grayscale v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/grayscale)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
+ */body{font-family:Lora,'Helvetica Neue',Helvetica,Arial,sans-serif;position:relative;width:100%;height:100%;color:#fff;background-color:#000}html{width:100%;height:100%}h1,h2,h3,h4,h5,h6{font-family:Cabin,'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;margin:0 0 35px;letter-spacing:1px;text-transform:uppercase}p{font-size:16px;line-height:1.5;margin:0 0 25px}@media (min-width:768px){p{font-size:18px;line-height:1.6;margin:0 0 35px}}a{-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;transition:all .2s ease-in-out;color:#42dca3}a:focus,a:hover{text-decoration:none;color:#1d9b6c}#mainNav{font-family:Cabin,'Helvetica Neue',Helvetica,Arial,sans-serif;margin-bottom:0;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.3);background-color:#000}#mainNav .navbar-toggler{font-size:14px;padding:11px;color:#fff;border:1px solid #fff}#mainNav .navbar-brand{font-weight:700}#mainNav a{color:#fff}#mainNav .navbar-nav .nav-item{-webkit-transition:background .3s ease-in-out;-moz-transition:background .3s ease-in-out;transition:background .3s ease-in-out}#mainNav .navbar-nav .nav-item:hover{color:fade(white,80%);outline:0;background-color:transparent}#mainNav .navbar-nav .nav-item:active,#mainNav .navbar-nav .nav-item:focus{outline:0;background-color:transparent}@media (min-width:992px){#mainNav{padding-top:20px;padding-bottom:20px;-webkit-transition:background .3s ease-in-out,padding-top .3s ease-in-out,padding-bottom .3s;-moz-transition:background .3s ease-in-out,padding-top .3s ease-in-out,padding-bottom .3s;transition:background .3s ease-in-out,padding-top .3s ease-in-out,padding-bottom .3s;letter-spacing:1px;border-bottom:none;background:0 0}#mainNav.navbar-shrink{padding-top:10px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.3);background:#000}#mainNav .nav-link.active{outline:0;background-color:rgba(255,255,255,.3)}#mainNav .nav-link.active:hover{color:#fff}}.masthead{display:table;width:100%;height:auto;padding:200px 0;text-align:center;color:#fff;background:url(../img/toronto.jpg) no-repeat bottom center scroll;background-color:#000;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}.masthead .intro-body{display:table-cell;vertical-align:middle}.masthead .intro-body .brand-heading{font-size:50px}.masthead .intro-body .intro-text{font-size:18px}@media (min-width:768px){.masthead{height:100%;padding:0}.masthead .intro-body .brand-heading{font-size:100px}.masthead .intro-body .intro-text{font-size:22px}}.btn-circle{font-size:26px;width:55px;height:55px;margin-top:15px;line-height:45px;-webkit-transition:background .3s ease-in-out;-moz-transition:background .3s ease-in-out;transition:background .3s ease-in-out;color:#fff;border:2px solid #fff;border-radius:100%!important;background:0 0}.btn-circle:focus,.btn-circle:hover{color:#fff;outline:0;background:rgba(255,255,255,.1)}.content-section{padding-top:150px;padding-bottom:150px}.download-section{color:#fff;    background: -webkit-gradient(linear,left top,right top,from(#212121),to(#121858));
+    background: -webkit-linear-gradient(left,#212121,#121858);;background-color:#000;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}#map{width:100%;height:300px}@media (min-width:992px){.content-section{padding-top:200px;padding-bottom:200px}#map{height:350px}}.btn{font-family:Cabin,'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:400;-webkit-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;transition:all .3s ease-in-out;text-transform:uppercase;border-radius:0}.btn-default{color:#42dca3;border:1px solid #42dca3;background-color:transparent}.btn-default:focus,.btn-default:hover{color:#000;border:1px solid #42dca3;outline:0;background-color:#42dca3}ul.banner-social-buttons{margin-top:0}@media (max-width:1199px){ul.banner-social-buttons{margin-top:15px}}@media (max-width:767px){ul.banner-social-buttons li{display:block;margin-bottom:20px;padding:0}ul.banner-social-buttons li:last-child{margin-bottom:0}}footer{padding:50px 0}footer p{font-size:14px;margin:0}::-moz-selection{background:#fcfcfc;background:rgba(255,255,255,.2);text-shadow:none}::selection{background:#fcfcfc;background:rgba(255,255,255,.2);text-shadow:none}img::selection{background:0 0}img::-moz-selection{background:0 0}body{-webkit-tap-highlight-color:rgba(255,255,255,.2)}
+ body {
+  margin: 0;
+  padding: 0;
+  background: #0a1b25;
+}
+
+#about{
+	background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(../img/city-night.jpg) no-repeat 50% fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    -webkit-animation: zoomInOut 30s linear infinite;
+    -mox-animation: zoomInOut 30s linear infinite;
+    animation: zoomInOut 30s linear infinite;
+}
+h3, a {
+  text-align: center;
+  color: white;
+  font-family: monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.container {
+  margin: 0 auto;
+}
+.school, .experienceInfo{
+  display: none;
+}
+[class*=" devicon-"], [class^=devicon-]{
+  font-size: 100px;
+}
+.lua {
+  margin: 0 auto;
+  position: relative;
+  border-radius: 50%;
+  width: 175px;
+  height: 175px;
+  box-shadow: #ffe44b -45px 45px 0 10px;
+  boder-radius: 10px;
+  background: transparent;
+  z-index: 0;
+}
+
+.lua__contorno {
+  margin: 0 auto;
+  position: relative;
+  border-radius: 50%;
+  width: 175px;
+  height: 175px;
+  box-shadow: #fec200 -55px 55px 0 15px;
+  boder-radius: 10px;
+  background: transparent;
+  bottom: 175px;
+  z-index: -1;
+}
+
+.nuvem1_1 {
+  width: 70px;
+  height: 25px;
+  margin: 0 auto;
+  background: #c2fff8;
+  border-radius: 40px;
+  position: relative;
+  bottom: 220px;
+  left: 30px;
+  animation: nbaixo 2s ease-in-out alternate infinite running;
+}
+
+.nuvem1_2 {
+  width: 70px;
+  height: 25px;
+  margin: 0 auto;
+  background: #c2fff8;
+  border-radius: 40px;
+  position: relative;
+  bottom: 260px;
+  left: 60px;
+  animation: nbaixo 2s ease-in-out alternate infinite running;
+}
+
+.nuvem2_1 {
+  width: 80px;
+  height: 45px;
+  margin: 0 auto;
+  background: #c2fff8;
+  border-radius: 40px;
+  position: relative;
+  top: -155px;
+  right: 140px;
+  z-index: 4;
+  box-shadow: #8af3e5 -20px 0 0 0;
+  animation: nmeio 2s ease-in-out alternate infinite running;
+}
+
+.nuvem2_2 {
+  width: 80px;
+  height: 45px;
+  margin: 0 auto;
+  background: #c2fff8;
+  border-radius: 40px;
+  position: relative;
+  bottom: 235px;
+  right: 110px;
+  box-shadow: #8af3e5 -20px 0 0 0;
+  z-index: 3;
+  animation: nmeio 2s ease-in-out alternate infinite running;
+}
+
+.nuvem2_border {
+  width: 120px;
+  height: 65px;
+  margin: 0 auto;
+  background: #0a1b25;
+  border-radius: 40px;
+  position: relative;
+  bottom: 290px;
+  right: 120px;
+  opacity: 0.05;
+  z-index: 2;
+  animation: nbaixo 2s ease-in-out alternate infinite running;
+}
+
+.nuvem3_1 {
+  width: 80px;
+  height: 25px;
+  margin: 0 auto;
+  background: #c2fff8;
+  border-radius: 40px;
+  position: relative;
+  top: 175px;
+  right: 38px;
+  box-shadow: #8af3e5 -35px 0 0 0;
+  z-index: 3;
+  animation: nmeio 2s ease-in-out alternate infinite running;
+}
+
+.nuvem3_border {
+  width: 135px;
+  height: 45px;
+  margin: 0 auto;
+  background: #0a1b25;
+  border-radius: 40px;
+  position: relative;
+  top: 140px;
+  right: 55px;
+  opacity: 0.05;
+  z-index: 2;
+  animation: nmeio 2s ease-in-out alternate infinite running;
+}
+
+.nuvem4_1 {
+  width: 70px;
+  height: 35px;
+  margin: 0 auto;
+  background: #c2fff8;
+  border-radius: 40px;
+  box-shadow: #8af3e5 -30px 0 0 0;
+  position: relative;
+  top: 160px;
+  left: 80px;
+  z-index: 1;
+}
+
+.nuvem4_2 {
+  width: 40px;
+  height: 35px;
+  margin: 0 auto;
+  background: #c2fff8;
+  border-radius: 20px;
+  box-shadow: #8af3e5 -15px 0 0 0;
+  position: relative;
+  top: 165px;
+  left: 40px;
+  z-index: 3;
+}
+
+.nuvem4_3 {
+  width: 50px;
+  height: 35px;
+  margin: 0 auto;
+  background: #c2fff8;
+  border-radius: 20px;
+  box-shadow: #8af3e5 -25px 0 0 0;
+  position: relative;
+  top: 175px;
+  left: 70px;
+  z-index: 2;
+}
+
+.nuvem4_4 {
+  width: 120px;
+  height: 35px;
+  margin: 0 auto;
+  background: #c2fff8;
+  border-radius: 20px;
+  box-shadow: #8af3e5 -30px 0 0 0;
+  position: relative;
+  top: 185px;
+  left: 20px;
+  z-index: 4;
+}
+
+.g1 {
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+  right: 0;
+  animation: g1 2s linear alternate infinite running;
+}
+
+.g2 {
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+  right: 0;
+  animation: g2 2s linear alternate infinite running;
+}
+
+@keyframes g1 {
+  from { right: 0; }
+  to   { right: 20px; }
+}
+
+@keyframes g2 {
+  from { right: 0; }
+  to   { right: -30px; }
+}
+.box1, .box2 {
+  padding: 65px;
+  height: 150px;
+  margin: 25px;
+  background: black;
+  border-radius: 10px;
+  border: solid 3px #black;
+  text-shadow: 0 0 20px #333;
+  box-shadow: 0 0 25px #333;
+  transition: margin-top 1000ms, box-shadow 300ms;
+  cursor: pointer;
+}
+.box1:hover, .box2:hover {
+  box-shadow: 0 0 10px #999;
+}
+
+.iam{
+    animation-delay: 0.6s;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    border: 1px solid white;
+    color: #5d76a4;
+    background-color: white;
+    padding: .5em;
+    border-radius: 5px;
+    border-bottom: 5px solid #2e34ef;
+    font-size: calc(0.75em + 1.3vmin);
+}
+.intro-text{
+    text-align: center;
+    text-shadow: 0px 10px rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: calc(3.75em + 5.3vmin) !important;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif !important;
+    animation-delay: 0.5s;
+    margin-top: 30vh;
+}
+.toolTitle{
+    font-size: 30px;
+    color: #84ffff;
+}
+
+
+.soc {
+  display: block;
+  font-size: 0;
+  list-style: none;
+  margin: 0 auto;
+  text-align: center;
+}
+.soc li {
+  display: inline-block;
+  margin: 12px;
+  margin: 1.2rem;
+}
+.soc a, .soc svg {
+  display: block;
+}
+.soc a {
+  position: relative;
+  height: 96px;
+  height: 9.6rem;
+  width: 96px;
+  width: 9.6rem;
+}
+.soc svg {
+  height: 100%;
+  width: 100%;
+}
+.soc em {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: -0.75em;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.icon-1:hover, .icon-2:hover, .icon-3:hover, .icon-4:hover, .icon-5:hover, .icon-6:hover, .icon-7:hover, .icon-8:hover, .icon-9:hover, .icon-10:hover, .icon-11:hover, .icon-12:hover, .icon-13:hover, .icon-14:hover, .icon-15:hover, .icon-16:hover, .icon-17:hover, .icon-18:hover, .icon-19:hover, .icon-20:hover, .icon-21:hover, .icon-22:hover, .icon-23:hover, .icon-24:hover, .icon-25:hover, .icon-26:hover, .icon-27:hover, .icon-28:hover, .icon-29:hover, .icon-30:hover {
+  border-radius: 100%;
+  color: #0e1a25;
+  fill: #0e1a25;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+
+.icon-1 {
+  color: #d94a26;
+  fill: #d94a26;
+}
+.icon-1:hover {
+  background: #d94a26;
+}
+
+.icon-2 {
+  color: #d96e26;
+  fill: #d96e26;
+}
+.icon-2:hover {
+  background: #d96e26;
+}
+
+.icon-3 {
+  color: #d99126;
+  fill: #d99126;
+}
+.icon-3:hover {
+  background: #d99126;
+}
+
+.icon-4 {
+  color: #d9b526;
+  fill: #d9b526;
+}
+.icon-4:hover {
+  background: #d9b526;
+}
+
+.icon-5 {
+  color: #d9d926;
+  fill: #d9d926;
+}
+.icon-5:hover {
+  background: #d9d926;
+}
+
+.icon-6 {
+  color: #b5d926;
+  fill: #b5d926;
+}
+.icon-6:hover {
+  background: #b5d926;
+}
+
+.icon-7 {
+  color: #91d926;
+  fill: #91d926;
+}
+.icon-7:hover {
+  background: #91d926;
+}
+
+.icon-8 {
+  color: #6ed926;
+  fill: #6ed926;
+}
+.icon-8:hover {
+  background: #6ed926;
+}
+
+.icon-9 {
+  color: #4ad926;
+  fill: #4ad926;
+}
+.icon-9:hover {
+  background: #4ad926;
+}
+
+.icon-10 {
+  color: #26d926;
+  fill: #26d926;
+}
+.icon-10:hover {
+  background: #26d926;
+}
+
+.icon-11 {
+  color: #26d94a;
+  fill: #26d94a;
+}
+.icon-11:hover {
+  background: #26d94a;
+}
+
+.icon-12 {
+  color: #26d96e;
+  fill: #26d96e;
+}
+.icon-12:hover {
+  background: #26d96e;
+}
+
+.icon-13 {
+  color: #26d991;
+  fill: #26d991;
+}
+.icon-13:hover {
+  background: #26d991;
+}
+
+.icon-14 {
+  color: #26d9b5;
+  fill: #26d9b5;
+}
+.icon-14:hover {
+  background: #26d9b5;
+}
+
+.icon-15 {
+  color: #26d9d9;
+  fill: #26d9d9;
+}
+.icon-15:hover {
+  background: #26d9d9;
+}
+
+.icon-16 {
+  color: #26b5d9;
+  fill: #26b5d9;
+}
+.icon-16:hover {
+  background: #26b5d9;
+}
+
+.icon-17 {
+  color: #2691d9;
+  fill: #2691d9;
+}
+.icon-17:hover {
+  background: #2691d9;
+}
+
+.icon-18 {
+  color: #266ed9;
+  fill: #266ed9;
+}
+.icon-18:hover {
+  background: #266ed9;
+}
+
+.icon-19 {
+  color: #264ad9;
+  fill: #264ad9;
+}
+.icon-19:hover {
+  background: #264ad9;
+}
+
+.icon-20 {
+  color: #2626d9;
+  fill: #2626d9;
+}
+.icon-20:hover {
+  background: #2626d9;
+}
+
+.icon-21 {
+  color: #4a26d9;
+  fill: #4a26d9;
+}
+.icon-21:hover {
+  background: #4a26d9;
+}
+
+.icon-22 {
+  color: #6e26d9;
+  fill: #6e26d9;
+}
+.icon-22:hover {
+  background: #6e26d9;
+}
+
+.icon-23 {
+  color: #9126d9;
+  fill: #9126d9;
+}
+.icon-23:hover {
+  background: #9126d9;
+}
+
+.icon-24 {
+  color: #b526d9;
+  fill: #b526d9;
+}
+.icon-24:hover {
+  background: #b526d9;
+}
+
+.icon-25 {
+  color: #d926d9;
+  fill: #d926d9;
+}
+.icon-25:hover {
+  background: #d926d9;
+}
+
+.icon-26 {
+  color: #d926b5;
+  fill: #d926b5;
+}
+.icon-26:hover {
+  background: #d926b5;
+}
+
+.icon-27 {
+  color: #d92691;
+  fill: #d92691;
+}
+.icon-27:hover {
+  background: #d92691;
+}
+
+.icon-28 {
+  color: #d9266e;
+  fill: #d9266e;
+}
+.icon-28:hover {
+  background: #d9266e;
+}
+
+.icon-29 {
+  color: #d9264a;
+  fill: #d9264a;
+}
+.icon-29:hover {
+  background: #d9264a;
+}
+
+.icon-30 {
+  color: #d92626;
+  fill: #d92626;
+}
+.icon-30:hover {
+  background: #d92626;
+}
